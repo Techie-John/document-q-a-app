@@ -38,8 +38,6 @@ A modern React TypeScript application for document question-and-answer functiona
 3. **Start the development server**:
    ```bash
    npm run dev
-   # or
-   npm start
    ```
 4. **Open your browser** to `http://localhost:5173` (Vite) or `http://localhost:3000` (Create React App)
 
