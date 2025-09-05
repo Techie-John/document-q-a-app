@@ -1,0 +1,24 @@
+:root {
+  --color-text-light: #333;
+  --color-background-light: #f4f7f9;
+  --color-card-background-light: #ffffff;
+  --color-border-light: #e0e6e9;
+  --color-primary: #007bff;
+}
+
+:root.theme--dark {
+  --color-text-light: #e0e0e0;
+  --color-background-light: #121212;
+  --color-card-background-light: #1e1e1e;
+  --color-border-light: #2c2c2c;
+  --color-primary: #66b2ff;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background-light);
+  color: var(--color-text-light);
+  transition: background-color 0.3s, color 0.3s;
+}

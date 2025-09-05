@@ -1,0 +1,174 @@
+.document-item {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.document-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.document-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #1e293b;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.document-meta {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0 0 4px 0;
+  display: block;
+}
+
+.qa-count {
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 600;
+  background-color: rgba(37, 99, 235, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.document-item.selected {
+  background-color: #dbeafe;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.document-item.selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #2563eb;
+  border-radius: 0 4px 4px 0;
+}
+
+.document-item.selected h4 {
+  color: #2563eb;
+}
+
+.document-item.selected .document-meta {
+  color: rgba(37, 99, 235, 0.8);
+}
+
+.document-item.selected .qa-count {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* DARK THEME - This fixes the white background issue */
+body.dark-theme .document-item {
+
+  border-color: #475569 !important;
+  color: #f1f5f9 !important;
+}
+
+body.dark-theme .document-item:hover {
+  border-color: #64748b !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark-theme .document-item.selected {
+  background-color: rgba(37, 99, 235, 0.2) !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3) !important;
+}
+
+body.dark-theme .document-item h4 {
+  color: #f1f5f9 !important;
+}
+
+body.dark-theme .document-item.selected h4 {
+  color: #60a5fa !important;
+}
+
+body.dark-theme .document-meta {
+  color: #94a3b8 !important;
+}
+
+body.dark-theme .document-item.selected .document-meta {
+  color: rgba(96, 165, 250, 0.8) !important;
+}
+
+body.dark-theme .qa-count {
+  background-color: rgba(37, 99, 235, 0.2) !important;
+  color: #60a5fa !important;
+}
+
+body.dark-theme .document-item.selected .qa-count {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+/* Dark theme for other elements */
+body.dark-theme .search-input {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #475569 !important;
+}
+
+body.dark-theme .search-input:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2) !important;
+}
+
+body.dark-theme .dropzone {
+  background-color: #1e293b !important;
+  border-color: #475569 !important;
+}
+
+body.dark-theme .dropzone p {
+  color: #94a3b8 !important;
+}
+
+body.dark-theme .dropzone.drag-over {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+  border-color: #2563eb !important;
+}
+
+/* Better contrast for document items in sidebar */
+body.dark-theme .document-item {
+  background-color: #1e293b !important;
+  border-color: #475569 !important;
+  color: #f8fafc !important;
+}
+
+body.dark-theme .document-item h4 {
+  color: #f8fafc !important;
+  font-weight: 600 !important;
+}
+
+body.dark-theme .document-meta {
+  color: #cbd5e1 !important;
+}
+
+body.dark-theme .qa-count {
+  background-color: rgba(37, 99, 235, 0.3) !important;
+  color: #93c5fd !important;
+}
+
+body.dark-theme .document-item.selected {
+  background-color: rgba(37, 99, 235, 0.25) !important;
+  border-color: #3b82f6 !important;
+}
+
+body.dark-theme .document-item.selected h4 {
+  color: #93c5fd !important;
+}
